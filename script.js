@@ -10,3 +10,19 @@ let cid = [
   ['TWENTY', 60],
   ['ONE HUNDRED', 100]
 ];
+
+let cash = document.getElementById("cash").value
+let changeSpans = document.querySelectorAll(".change-span")
+
+function updateCID() {
+  
+  for (let i = 0; i < changeSpans.length; i++) {
+    changeSpans[i].textContent = cid[i][1];
+  }
+  
+}
+
+
+
+
+window.onload = updateCID();
